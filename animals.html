@@ -1,7 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Wild Life</title>  
+  <title>Wild Life</title> 
+  <br>
+  <br>
+  <br>   
+  <nav class="navbar navbar-expand-lg navbar-light class=" navbar navbar-light"
+        style="background-color: #e3f2fd; color: black;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Interesting Animals</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="animals.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="plane.html">Plane</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="train.html">Train</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Other pages
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="plane.html"
+                                    style="background-color: aquamarine;">Plane</a></li>
+                            <li class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="train.html" style="background-color: bisque;">Train</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
@@ -29,6 +77,16 @@
             background-color: brown;
         }
     </style>
+    <script>
+    functionsubmitFunction(){​​​​​​​​
+    varemailId= document.getElementById("exampleInputEmail1").value;
+    varanimalName =document.getElementById("animalName").value;
+    varcheck=document.getElementById("exampleCheck1").checked;
+    alert("Email :"+emailId+" \n"+"Animal :"+animalName+" \n"+"Singup for news letter? "+check);
+    }​​​​​​​​
+    </script>
+    
+    
 
 </head>
 <body>
@@ -157,6 +215,54 @@
                 </div>
             </div>
             <br>
+            <br>
+            <br>
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">&nbsp;Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">&nbsp;We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="Animal-label" for="animalName" class="form-label">&nbsp;Enter your animal</label>
+                    <input type="text" id="animalName" class="form-control">
+                </div>
+                
+                <div class="form-check">
+                    <label class="form-check-label" for="exampleCheck1">Sign up for newsletter? </label>
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+         
+                </div>
+                <br>
+                <br>
+                <button type="submit" class="btn btn-primary" onclick="submitFunction()">Submit</button>
+                <br>
+            </form>
+            <br>
+            <div class="container row">
+                <div class="card" style="width: 18rem;">
+                    <img src="monkey.jpg" class="card-img-top" alt="monkey">
+                    <div class="card-body">
+                        <h5 class="card-title">Monkey</h5>
+                        <p class="card-text">Monkeys live in trees, grasslands, mountains, forests, and on high plains. A group of monkeys is called a troop. Most primates share six basic features: forward-facing eyes, eye sockets, grasping hands, nails, fingerprints, and large brains. Monkeys are most easily distinguished from apes by their tails.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="urial.jpg" class="card-img-top" alt="urial">
+                    <div class="card-body">
+                        <h5 class="card-title">Urial</h5>
+                        <p class="card-text">Urial males have large horns, curling outwards from the top of the head turning in to end somewhere behind the head; females have shorter, compressed horns.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="dog.jpg" class="card-img-top" alt="dog">
+                    <div class="card-body">
+                        <h5 class="card-title">Dog</h5>
+                        <p class="card-text">Dogs (Canis lupus familiaris) are domesticated mammals, not natural wild animals. They were originally bred from wolves.</p>
+                    </div>
+                </div>
+         
+            </div>
             <br>
             <br>
 </body>
